@@ -10,8 +10,8 @@ A GitHub Codespace with three AI coding agents installed with `npm install -g`:
 
 ## Start it
 
-Click **Code → Codespaces → Create codespace on main**. When the install finishes, the
-terminal prints the three version numbers.
+Click **Code → Codespaces → Create codespace on main**. The three agents are installed
+while the codespace is being created.
 
 ## Sign in
 
