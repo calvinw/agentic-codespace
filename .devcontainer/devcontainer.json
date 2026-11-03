@@ -4,5 +4,5 @@
   "features": {
     "ghcr.io/devcontainers/features/node:1": { "version": "22" }
   },
-  "onCreateCommand": "npm install -g opencode-ai @openai/codex @anthropic-ai/claude-code"
+  "onCreateCommand": "npm install -g @opencode/cli @openai/codex @anthropic-ai/claude-code"
 }

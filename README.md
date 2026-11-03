@@ -4,7 +4,7 @@ A GitHub Codespace with three AI coding agents installed with `npm install -g`:
 
 | Agent | npm package | Command |
 |---|---|---|
-| OpenCode | `opencode-ai` | `opencode` |
+| OpenCode | `@opencode/cli` | `opencode` |
 | Codex | `@openai/codex` | `codex` |
 | Claude Code | `@anthropic-ai/claude-code` | `claude` |
 
