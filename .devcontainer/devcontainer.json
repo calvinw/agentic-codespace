@@ -1,0 +1,20 @@
+{
+  "name": "Agentic Codespace",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+
+  // onCreateCommand runs during a prebuild, so the CLIs are baked in when prebuilds are on.
+  // Without prebuilds it still runs once when the codespace is first created.
+  "onCreateCommand": "npm install -g opencode-ai @openai/codex @anthropic-ai/claude-code",
+
+  "postCreateCommand": "opencode --version && codex --version && claude --version",
+
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["README.md"]
+    }
+  },
+
+  "hostRequirements": {
+    "cpus": 2
+  }
+}
