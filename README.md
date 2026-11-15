@@ -48,7 +48,8 @@ while the codespace is being created.
 
 ## Sign in
 
-- `opencode`: with `OPENROUTER_API_KEY` set, pick an OpenRouter model with
-  `/models`; no `/connect` needed
+- `opencode`: with `OPENROUTER_API_KEY` set, OpenCode turns on OpenRouter by
+  itself and starts with DeepSeek V4.1 Flash (set in `opencode.json`). No
+  `/connect` needed; use `/models` to switch models.
 - `codex`: sign in with your ChatGPT account, or set `OPENAI_API_KEY`
 - `claude`: sign in with your Claude account, or set `ANTHROPIC_API_KEY`
