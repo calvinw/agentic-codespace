@@ -8,29 +8,38 @@ A GitHub Codespace with three AI coding agents installed with `npm install -g`:
 | Codex | `@openai/codex` | `codex` |
 | Claude Code | `@anthropic-ai/claude-code` | `claude` |
 
-## Add your OpenRouter key first
+## Your OpenRouter key
 
-OpenCode reaches its models through [OpenRouter](https://openrouter.ai). Save
-your OpenRouter API key as a **Codespaces secret** named `OPENROUTER_API_KEY`
-and it is in every codespace you start from this repo, so you never type it
-in. The key stays in your GitHub account, never in the repo.
+OpenCode reaches its models through [OpenRouter](https://openrouter.ai), so it
+needs your OpenRouter API key in the variable `OPENROUTER_API_KEY`.
+
+**Easiest:** the first time you open a terminal in the codespace, it asks:
+
+```default
+Paste it here and press Enter (nothing shows as you paste), or just press Enter to skip:
+```
+
+Paste your key and press Enter. It is saved in your codespace's home folder
+(not in the repository), and every terminal after that has it. If you delete
+the codespace, you paste it again in the next one.
+
+**Or, once for all your codespaces:** save it as a Codespaces secret.
 
 1. Go to <https://github.com/settings/codespaces>.
 2. Under **Codespaces secrets**, click **New secret**.
 3. Name: `OPENROUTER_API_KEY`. Value: your OpenRouter key.
-4. Under **Repository access**, choose this repo (or your copy of it), then
-   click **Add secret**.
+4. Under **Repository access**, choose your repo, then click **Add secret**.
+   For each new repo, edit the secret and add that repo too.
 
-Or create the codespace with **Code → Codespaces → ⋯ → New with options**:
-GitHub shows a box for `OPENROUTER_API_KEY` and saves what you type as your
-secret.
+When the secret is set, the terminal does not ask.
 
-If a codespace is already open when you add the secret, restart it (or run
-**Codespaces: Rebuild Container**) to pick it up. To check it is there, run:
+To check the key is there:
 
 ```bash
 test -n "$OPENROUTER_API_KEY" && echo "key is set" || echo "key is NOT set"
 ```
+
+To change a pasted key, run `rm ~/.openrouter_key` and open a new terminal.
 
 ## Start it
 
