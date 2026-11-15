@@ -8,13 +8,6 @@
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
   "onCreateCommand": "npm install -g @opencode/cli @openai/codex @anthropic-ai/claude-code",
-  "postCreateCommand": "bash .devcontainer/setup-shell.sh",
-  "secrets": {
-    "OPENROUTER_API_KEY": {
-      "description": "Your OpenRouter API key. OpenCode uses it to reach models through OpenRouter.",
-      "documentationUrl": "https://openrouter.ai/keys"
-    }
-  },
   "customizations": {
     "vscode": {
       "extensions": [
