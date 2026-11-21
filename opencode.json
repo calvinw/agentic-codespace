@@ -1,4 +1,11 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "openrouter/deepseek/deepseek-v4.1-flash"
+  "model": "openrouter/deepseek/deepseek-v4.1-flash",
+  "mcp": {
+    "dolt": {
+      "type": "remote",
+      "url": "https://bus-mgmt-databases.mcp.mathplosion.com/mcp-dolt-database/sse",
+      "enabled": true
+    }
+  }
 }

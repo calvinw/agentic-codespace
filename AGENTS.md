@@ -23,3 +23,13 @@ them in plain words:
   button, allow an install), tell them exactly where to click and what to
   type.
 - Keep answers short. Offer more detail instead of giving it all at once.
+
+## The course database
+
+You have a `dolt` MCP server connected to the course's Dolt database, with
+tools to list and describe tables and views and to run SQL queries
+(`list_tables`, `describe_table`, `list_views`, `describe_view`,
+`read_query`, `write_query`). When the student asks about the course data,
+use these tools rather than looking for files. Look at the tables first, then
+query. Ask before running anything that changes the database
+(`write_query`).
