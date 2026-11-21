@@ -35,13 +35,15 @@ file in the repository.
 
 ## The course database (Dolt MCP)
 
-OpenCode and Claude Code are already connected to the course's Dolt database
+OpenCode, Claude Code and Codex are already connected to the course's Dolt database
 through an MCP server (a plug-in that gives the agent database tools). Just ask
 in plain words, for example "What tables are in the database?" or "Show me
 sales by company for 2024."
 
-The connection is set in `opencode.json` (OpenCode) and `.mcp.json` (Claude
-Code); nothing needs to be installed. The server is:
+The connection is set in `opencode.json` (OpenCode), `.mcp.json` (Claude
+Code) and `.codex/config.toml` (Codex). The first time you start `codex`, it
+asks whether to trust this folder: choose **Yes**, or it won't see the
+database. The server is:
 
 ```
 https://bus-mgmt-databases.mcp.mathplosion.com/mcp-dolt-database/sse

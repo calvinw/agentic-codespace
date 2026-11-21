@@ -1,0 +1,3 @@
+[mcp_servers.dolt]
+command = "supergateway"
+args = ["--sse", "https://bus-mgmt-databases.mcp.mathplosion.com/mcp-dolt-database/sse", "--logLevel", "none"]
