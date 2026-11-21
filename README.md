@@ -1,16 +1,17 @@
 # Agentic Codespace
 
-A GitHub Codespace with three AI coding agents installed with `npm install -g`:
+A GitHub Codespace with four AI coding agents:
 
-| Agent | npm package | Command |
+| Agent | Installed from | Command |
 |---|---|---|
 | OpenCode | `@opencode/cli` | `opencode` |
 | Codex | `@openai/codex` | `codex` |
 | Claude Code | `@anthropic-ai/claude-code` | `claude` |
+| Antigravity CLI | Google's install script | `agy` |
 
 ## Start it
 
-Click **Code → Codespaces → Create codespace on main**. The three agents are installed
+Click **Code → Codespaces → Create codespace on main**. The four agents are installed
 while the codespace is being created.
 
 ## Sign in
@@ -33,15 +34,18 @@ file in the repository.
 
 **Claude Code**: sign in with your Claude account, or set `ANTHROPIC_API_KEY`.
 
+**Antigravity CLI**: type `agy` and sign in with your Google account.
+
 ## The course database (Dolt MCP)
 
-OpenCode, Claude Code and Codex are already connected to the course's Dolt database
+OpenCode, Claude Code, Codex and Antigravity CLI are already connected to the course's Dolt database
 through an MCP server (a plug-in that gives the agent database tools). Just ask
 in plain words, for example "What tables are in the database?" or "Show me
 sales by company for 2024."
 
 The connection is set in `opencode.json` (OpenCode), `.mcp.json` (Claude
-Code) and `.codex/config.toml` (Codex). The first time you start `codex`, it
+Code), `.codex/config.toml` (Codex) and `.agents/mcp_config.json`
+(Antigravity CLI). The first time you start `codex`, it
 asks whether to trust this folder: choose **Yes**, or it won't see the
 database. The server is:
 

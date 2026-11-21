@@ -7,7 +7,10 @@
     },
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
-  "onCreateCommand": "npm install -g @opencode/cli @openai/codex @anthropic-ai/claude-code supergateway@3.4.3",
+  "onCreateCommand": "npm install -g @opencode/cli @openai/codex @anthropic-ai/claude-code supergateway@3.4.3 && curl -fsSL https://antigravity.google/cli/install.sh | bash",
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/home/vscode/.local/bin"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
