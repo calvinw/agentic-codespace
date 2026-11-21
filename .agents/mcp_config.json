@@ -1,7 +1,8 @@
 {
   "mcpServers": {
     "dolt": {
-      "serverUrl": "https://bus-mgmt-databases.mcp.mathplosion.com/mcp-dolt-database/sse"
+      "command": "supergateway",
+      "args": ["--sse", "https://bus-mgmt-databases.mcp.mathplosion.com/mcp-dolt-database/sse", "--logLevel", "none"]
     }
   }
 }
