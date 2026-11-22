@@ -3,8 +3,14 @@
   "model": "openrouter/deepseek/deepseek-v4.1-flash",
   "mcp": {
     "dolt": {
-      "type": "remote",
-      "url": "https://bus-mgmt-databases.mcp.mathplosion.com/mcp-dolt-database/sse",
+      "type": "local",
+      "command": [
+        "supergateway",
+        "--sse",
+        "https://bus-mgmt-databases.mcp.mathplosion.com/mcp-dolt-database/sse",
+        "--logLevel",
+        "none"
+      ],
       "enabled": true
     }
   }
